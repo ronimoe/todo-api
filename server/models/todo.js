@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
-const Todo = mongoose.model('Todo', {
+var Todo = mongoose.model('Todo', {
   text: {
     type: String,
     required: true,
     minlength: 1,
-    trim: true //delete leading and ending space
+    trim: true
   },
   completed: {
     type: Boolean,
